@@ -1,2 +1,3 @@
 # demo_hardware
-temporary - for testing purposes
+Simple 78XX voltage regulator schematic and PCB board created using EAGLE 7.0.3
+just temporary - for gitgub testing purposes with schematic and PCB files
