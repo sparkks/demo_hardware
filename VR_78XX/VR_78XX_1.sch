@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5981,7 +5981,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </classes>
 <parts>
 <part name="C3" library="CDE_DMM" deviceset="1" device="" value="1 µF"/>
-<part name="C8" library="CDE_DMM" deviceset="1" device="" value="1 µF"/>
+<part name="C12" library="CDE_DMM" deviceset="1" device="" value="1 µF"/>
 <part name="X5" library="con-amp_a" deviceset="MTA02-100" device=""/>
 <part name="GND2" library="supply1_a" deviceset="GND" device=""/>
 <part name="GND1" library="supply1_a" deviceset="GND" device=""/>
@@ -6015,7 +6015,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="D2" library="diode_a" deviceset="1N5059" device=""/>
 <part name="D3" library="diode_a" deviceset="1N5059" device=""/>
 <part name="D4" library="diode_a" deviceset="1N5059" device=""/>
-<part name="C5" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
+<part name="C5" library="rcl_a" deviceset="C-EU" device="050-025X075" value="1 µF"/>
 <part name="GND9" library="supply1_a" deviceset="GND" device=""/>
 <part name="GND16" library="supply1_a" deviceset="GND" device=""/>
 <part name="C1" library="cap_vishay-pol_a" deviceset="BEYSHLAG-118/119AHT" device="C" value="470 µF">
@@ -6024,89 +6024,97 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <part name="C2" library="cap_vishay-pol_a" deviceset="BEYSHLAG-118/119AHT" device="C" value="470 µF">
 <attribute name="VOLTAGE" value="40 V"/>
 </part>
-<part name="C4" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
-<part name="C6" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
+<part name="C4" library="rcl_a" deviceset="C-EU" device="050-025X075" value="1 µF"/>
+<part name="C10" library="rcl_a" deviceset="C-EU" device="050-025X075" value="1 µF"/>
+<part name="C11" library="rcl_a" deviceset="C-EU" device="050-025X075" value="1 µF"/>
+<part name="C13" library="cap_vishay-pol_a" deviceset="BEYSHLAG-118/119AHT" device="C" value="470 µF">
+<attribute name="VOLTAGE" value="40 V"/>
+</part>
+<part name="C14" library="cap_vishay-pol_a" deviceset="BEYSHLAG-118/119AHT" device="C" value="470 µF">
+<attribute name="VOLTAGE" value="40 V"/>
+</part>
+<part name="GND17" library="supply1_a" deviceset="GND" device=""/>
 <part name="C7" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
-<part name="C9" library="cap_vishay-pol_a" deviceset="BEYSHLAG-118/119AHT" device="C" value="470 µF">
-<attribute name="VOLTAGE" value="40 V"/>
-</part>
-<part name="C10" library="cap_vishay-pol_a" deviceset="BEYSHLAG-118/119AHT" device="C" value="470 µF">
-<attribute name="VOLTAGE" value="40 V"/>
-</part>
+<part name="GND18" library="supply1_a" deviceset="GND" device=""/>
+<part name="C6" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
+<part name="GND23" library="supply1_a" deviceset="GND" device=""/>
+<part name="C9" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
+<part name="GND24" library="supply1_a" deviceset="GND" device=""/>
+<part name="C8" library="rcl_a" deviceset="C-EU" device="050-025X075" value="0,1 µF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-96" y="219" size="2" layer="91">VIN+</text>
 <text x="-96" y="216" size="2" layer="91">VIN-</text>
-<text x="189" y="229" size="2" layer="91">VOUT+</text>
-<text x="189" y="226" size="2" layer="91">VOUT-</text>
+<text x="209" y="229" size="2" layer="91">VOUT+</text>
+<text x="209" y="226" size="2" layer="91">VOUT-</text>
 </plain>
 <instances>
 <instance part="C3" gate="G$1" x="5" y="220" smashed="yes">
 <attribute name="NAME" x="5" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
 <attribute name="VALUE" x="5" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
 </instance>
-<instance part="C8" gate="G$1" x="110" y="220" smashed="yes">
-<attribute name="NAME" x="110" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
-<attribute name="VALUE" x="110" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
+<instance part="C12" gate="G$1" x="144" y="220" smashed="yes">
+<attribute name="NAME" x="144" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
+<attribute name="VALUE" x="144" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
 </instance>
-<instance part="X5" gate="G$1" x="183" y="230" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="233" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="224" size="1.5" layer="96" rot="R270"/>
+<instance part="X5" gate="G$1" x="203" y="230" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="233" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="224" size="1.5" layer="96" rot="R270"/>
 </instance>
 <instance part="GND2" gate="1" x="-21" y="209" smashed="yes"/>
 <instance part="GND1" gate="1" x="5" y="209" smashed="yes"/>
 <instance part="GND3" gate="1" x="16" y="209" smashed="yes"/>
-<instance part="GND4" gate="1" x="51" y="209" smashed="yes"/>
-<instance part="GND5" gate="1" x="122" y="209" smashed="yes"/>
-<instance part="GND6" gate="1" x="110" y="209" smashed="yes"/>
-<instance part="GND7" gate="1" x="97" y="209" smashed="yes"/>
-<instance part="GND10" gate="1" x="177" y="227" smashed="yes" rot="R270"/>
-<instance part="X6" gate="G$1" x="183" y="216" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="219" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="210" size="1.5" layer="96" rot="R270"/>
+<instance part="GND4" gate="1" x="75" y="209" smashed="yes"/>
+<instance part="GND5" gate="1" x="156" y="208" smashed="yes"/>
+<instance part="GND6" gate="1" x="144" y="208" smashed="yes"/>
+<instance part="GND7" gate="1" x="132" y="208" smashed="yes"/>
+<instance part="GND10" gate="1" x="197" y="227" smashed="yes" rot="R270"/>
+<instance part="X6" gate="G$1" x="203" y="216" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="219" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="210" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="X8" gate="G$1" x="183" y="203" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="206" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="197" size="1.5" layer="96" rot="R270"/>
+<instance part="X8" gate="G$1" x="203" y="203" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="206" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="197" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="X7" gate="G$1" x="183" y="175" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="178" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="169" size="1.5" layer="96" rot="R270"/>
+<instance part="X7" gate="G$1" x="203" y="175" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="178" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="169" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="GND11" gate="1" x="177" y="213" smashed="yes" rot="R270"/>
-<instance part="GND12" gate="1" x="177" y="200" smashed="yes" rot="R270"/>
-<instance part="GND13" gate="1" x="177" y="187" smashed="yes" rot="R270"/>
-<instance part="GND14" gate="1" x="177" y="172" smashed="yes" rot="R270"/>
+<instance part="GND11" gate="1" x="197" y="213" smashed="yes" rot="R270"/>
+<instance part="GND12" gate="1" x="197" y="200" smashed="yes" rot="R270"/>
+<instance part="GND13" gate="1" x="197" y="187" smashed="yes" rot="R270"/>
+<instance part="GND14" gate="1" x="197" y="172" smashed="yes" rot="R270"/>
 <instance part="GND15" gate="1" x="-60" y="203" smashed="yes"/>
-<instance part="X9" gate="G$1" x="183" y="149" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="152" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="143" size="1.5" layer="96" rot="R270"/>
+<instance part="X9" gate="G$1" x="203" y="149" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="152" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="143" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="GND19" gate="1" x="177" y="159" smashed="yes" rot="R270"/>
-<instance part="GND20" gate="1" x="177" y="146" smashed="yes" rot="R270"/>
+<instance part="GND19" gate="1" x="197" y="159" smashed="yes" rot="R270"/>
+<instance part="GND20" gate="1" x="197" y="146" smashed="yes" rot="R270"/>
 <instance part="GND21" gate="1" x="-8" y="209" smashed="yes"/>
-<instance part="GND22" gate="1" x="136" y="209" smashed="yes"/>
-<instance part="U1" gate="A1" x="51" y="230"/>
+<instance part="GND22" gate="1" x="168" y="208" smashed="yes"/>
+<instance part="U1" gate="A1" x="75" y="230"/>
 <instance part="F1" gate="1" x="-60" y="194"/>
 <instance part="X1" gate="G$2" x="-81" y="217" smashed="yes" rot="R90">
 <attribute name="NAME" x="-85" y="223" size="1.5" layer="95"/>
 <attribute name="VALUE" x="-79" y="223" size="1.5" layer="96" rot="R90"/>
 </instance>
-<instance part="X4" gate="G$1" x="183" y="190" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="193" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="184" size="1.5" layer="96" rot="R270"/>
+<instance part="X4" gate="G$1" x="203" y="190" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="193" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="184" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="X3" gate="G$1" x="183" y="162" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="165" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="156" size="1.5" layer="96" rot="R270"/>
+<instance part="X3" gate="G$1" x="203" y="162" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="165" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="156" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="X2" gate="G$1" x="183" y="137" smashed="yes" rot="R270">
-<attribute name="NAME" x="184" y="140" size="1.5" layer="95"/>
-<attribute name="VALUE" x="180" y="131" size="1.5" layer="96" rot="R270"/>
+<instance part="X2" gate="G$1" x="203" y="137" smashed="yes" rot="R270">
+<attribute name="NAME" x="204" y="140" size="1.5" layer="95"/>
+<attribute name="VALUE" x="200" y="131" size="1.5" layer="96" rot="R270"/>
 </instance>
-<instance part="GND8" gate="1" x="177" y="134" smashed="yes" rot="R270"/>
+<instance part="GND8" gate="1" x="197" y="134" smashed="yes" rot="R270"/>
 <instance part="D1" gate="1" x="-54" y="214" smashed="yes" rot="R90">
 <attribute name="NAME" x="-49" y="213" size="2" layer="95" rot="R90"/>
 </instance>
@@ -6126,7 +6134,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <attribute name="VOLTAGE" x="28" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
 </instance>
 <instance part="GND9" gate="1" x="28" y="209" smashed="yes"/>
-<instance part="GND16" gate="1" x="76" y="209" smashed="yes"/>
+<instance part="GND16" gate="1" x="120" y="208" smashed="yes"/>
 <instance part="C1" gate="C" x="-21" y="220" smashed="yes">
 <attribute name="NAME" x="-21" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
 <attribute name="VALUE" x="-21" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
@@ -6142,25 +6150,49 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <attribute name="VALUE" x="16" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="VOLTAGE" x="16" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
 </instance>
-<instance part="C6" gate="C" x="76" y="220" smashed="yes">
-<attribute name="NAME" x="76" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
-<attribute name="VALUE" x="76" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
-<attribute name="VOLTAGE" x="76" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<instance part="C10" gate="C" x="120" y="220" smashed="yes">
+<attribute name="NAME" x="120" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="120" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VOLTAGE" x="120" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
 </instance>
-<instance part="C7" gate="C" x="97" y="220" smashed="yes">
-<attribute name="NAME" x="97" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
-<attribute name="VALUE" x="97" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
-<attribute name="VOLTAGE" x="97" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<instance part="C11" gate="C" x="132" y="220" smashed="yes">
+<attribute name="NAME" x="132" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="132" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VOLTAGE" x="132" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
 </instance>
-<instance part="C9" gate="C" x="122" y="220" smashed="yes">
-<attribute name="NAME" x="122" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
-<attribute name="VALUE" x="122" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
-<attribute name="VOLTAGE" x="122" y="199" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
+<instance part="C13" gate="C" x="156" y="220" smashed="yes">
+<attribute name="NAME" x="156" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
+<attribute name="VALUE" x="156" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
+<attribute name="VOLTAGE" x="156" y="199" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
 </instance>
-<instance part="C10" gate="C" x="136" y="220" smashed="yes">
-<attribute name="NAME" x="136" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
-<attribute name="VALUE" x="136" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
-<attribute name="VOLTAGE" x="136" y="199" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
+<instance part="C14" gate="C" x="168" y="220" smashed="yes">
+<attribute name="NAME" x="168" y="205" size="1.5" layer="95" font="vector" ratio="10" align="center"/>
+<attribute name="VALUE" x="168" y="202" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
+<attribute name="VOLTAGE" x="168" y="199" size="1.5" layer="96" font="vector" ratio="10" align="center"/>
+</instance>
+<instance part="GND17" gate="1" x="40" y="209" smashed="yes"/>
+<instance part="C7" gate="C" x="52" y="220" smashed="yes">
+<attribute name="NAME" x="52" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="52" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VOLTAGE" x="52" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+</instance>
+<instance part="GND18" gate="1" x="52" y="209" smashed="yes"/>
+<instance part="C6" gate="C" x="40" y="220" smashed="yes">
+<attribute name="NAME" x="40" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="40" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VOLTAGE" x="40" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+</instance>
+<instance part="GND23" gate="1" x="96" y="208" smashed="yes"/>
+<instance part="C9" gate="C" x="108" y="220" smashed="yes">
+<attribute name="NAME" x="108" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="108" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VOLTAGE" x="108" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+</instance>
+<instance part="GND24" gate="1" x="108" y="208" smashed="yes"/>
+<instance part="C8" gate="C" x="96" y="220" smashed="yes">
+<attribute name="NAME" x="96" y="205" size="1.5" layer="95" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="96" y="202" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="VOLTAGE" x="96" y="199" size="1.5" layer="96" font="vector" ratio="10" rot="R180" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -6183,47 +6215,47 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="C4" gate="C" pin="2"/>
 </segment>
 <segment>
-<wire x1="51" y1="210" x2="51" y2="223" width="0.3" layer="91"/>
+<wire x1="75" y1="210" x2="75" y2="223" width="0.3" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="U1" gate="A1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="122" y1="210" x2="122" y2="218" width="0.3" layer="91"/>
+<wire x1="156" y1="209" x2="156" y2="218" width="0.3" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="C9" gate="C" pin="-"/>
+<pinref part="C13" gate="C" pin="-"/>
 </segment>
 <segment>
-<wire x1="110" y1="210" x2="110" y2="218" width="0.3" layer="91"/>
+<wire x1="144" y1="209" x2="144" y2="218" width="0.3" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C12" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="97" y1="218" x2="97" y2="210" width="0.3" layer="91"/>
+<wire x1="132" y1="218" x2="132" y2="209" width="0.3" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="C7" gate="C" pin="2"/>
+<pinref part="C11" gate="C" pin="2"/>
 </segment>
 <segment>
-<wire x1="178" y1="227" x2="179" y2="227" width="0.3" layer="91"/>
+<wire x1="198" y1="227" x2="199" y2="227" width="0.3" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="X5" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="178" y1="213" x2="179" y2="213" width="0.3" layer="91"/>
+<wire x1="198" y1="213" x2="199" y2="213" width="0.3" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <pinref part="X6" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="178" y1="200" x2="179" y2="200" width="0.3" layer="91"/>
+<wire x1="198" y1="200" x2="199" y2="200" width="0.3" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <pinref part="X8" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="178" y1="187" x2="179" y2="187" width="0.3" layer="91"/>
+<wire x1="198" y1="187" x2="199" y2="187" width="0.3" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <pinref part="X4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="178" y1="172" x2="179" y2="172" width="0.3" layer="91"/>
+<wire x1="198" y1="172" x2="199" y2="172" width="0.3" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="X7" gate="G$1" pin="2"/>
 </segment>
@@ -6239,12 +6271,12 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <junction x="-60" y="209"/>
 </segment>
 <segment>
-<wire x1="178" y1="159" x2="179" y2="159" width="0.3" layer="91"/>
+<wire x1="198" y1="159" x2="199" y2="159" width="0.3" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <pinref part="X3" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<wire x1="178" y1="146" x2="179" y2="146" width="0.3" layer="91"/>
+<wire x1="198" y1="146" x2="199" y2="146" width="0.3" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 <pinref part="X9" gate="G$1" pin="2"/>
 </segment>
@@ -6254,12 +6286,12 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="C2" gate="C" pin="-"/>
 </segment>
 <segment>
-<wire x1="136" y1="210" x2="136" y2="218" width="0.3" layer="91"/>
+<wire x1="168" y1="209" x2="168" y2="218" width="0.3" layer="91"/>
 <pinref part="GND22" gate="1" pin="GND"/>
-<pinref part="C10" gate="C" pin="-"/>
+<pinref part="C14" gate="C" pin="-"/>
 </segment>
 <segment>
-<wire x1="178" y1="134" x2="179" y2="134" width="0.3" layer="91"/>
+<wire x1="198" y1="134" x2="199" y2="134" width="0.3" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <pinref part="X2" gate="G$1" pin="2"/>
 </segment>
@@ -6269,82 +6301,68 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="76" y1="218" x2="76" y2="210" width="0.3" layer="91"/>
+<wire x1="120" y1="218" x2="120" y2="209" width="0.3" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
+<pinref part="C10" gate="C" pin="2"/>
+</segment>
+<segment>
+<wire x1="40" y1="218" x2="40" y2="210" width="0.3" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
 <pinref part="C6" gate="C" pin="2"/>
 </segment>
-</net>
-<net name="VDD2" class="0">
 <segment>
-<wire x1="-8" y1="222" x2="-8" y2="230" width="0.3" layer="91"/>
-<wire x1="-21" y1="222" x2="-21" y2="230" width="0.3" layer="91"/>
-<wire x1="-21" y1="230" x2="-8" y2="230" width="0.3" layer="91"/>
-<wire x1="-8" y1="230" x2="5" y2="230" width="0.3" layer="91"/>
-<wire x1="5" y1="222" x2="5" y2="230" width="0.3" layer="91"/>
-<wire x1="5" y1="230" x2="16" y2="230" width="0.3" layer="91"/>
-<wire x1="16" y1="222" x2="16" y2="230" width="0.3" layer="91"/>
-<wire x1="16" y1="230" x2="28" y2="230" width="0.3" layer="91"/>
-<wire x1="28" y1="230" x2="41" y2="230" width="0.3" layer="91"/>
-<wire x1="-60" y1="230" x2="-60" y2="242" width="0.3" layer="91"/>
-<wire x1="-60" y1="242" x2="-32" y2="242" width="0.3" layer="91"/>
-<wire x1="-32" y1="242" x2="-32" y2="230" width="0.3" layer="91"/>
-<wire x1="-32" y1="230" x2="-21" y2="230" width="0.3" layer="91"/>
-<junction x="5" y="230"/>
-<junction x="16" y="230"/>
-<junction x="-21" y="230"/>
-<junction x="-8" y="230"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<pinref part="U1" gate="A1" pin="VI"/>
-<pinref part="D4" gate="1" pin="C"/>
-<wire x1="-66" y1="228" x2="-66" y2="230" width="0.3" layer="91"/>
-<wire x1="-66" y1="230" x2="-60" y2="230" width="0.3" layer="91"/>
-<pinref part="D2" gate="1" pin="C"/>
-<wire x1="-60" y1="230" x2="-54" y2="230" width="0.3" layer="91"/>
-<wire x1="-54" y1="230" x2="-54" y2="228" width="0.3" layer="91"/>
-<junction x="-60" y="230"/>
-<pinref part="C5" gate="C" pin="1"/>
-<wire x1="28" y1="222" x2="28" y2="230" width="0.3" layer="91"/>
-<junction x="28" y="230"/>
-<pinref part="C1" gate="C" pin="+"/>
-<pinref part="C2" gate="C" pin="+"/>
-<pinref part="C4" gate="C" pin="1"/>
+<pinref part="C7" gate="C" pin="2"/>
+<wire x1="52" y1="218" x2="52" y2="210" width="0.3" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+</segment>
+<segment>
+<wire x1="96" y1="218" x2="96" y2="209" width="0.3" layer="91"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<pinref part="C8" gate="C" pin="2"/>
+</segment>
+<segment>
+<pinref part="C9" gate="C" pin="2"/>
+<wire x1="108" y1="218" x2="108" y2="209" width="0.3" layer="91"/>
+<pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="VOUT+" class="0">
 <segment>
-<wire x1="136" y1="222" x2="136" y2="230" width="0.3" layer="91"/>
-<wire x1="173" y1="175" x2="173" y2="162" width="0.3" layer="91"/>
-<wire x1="173" y1="162" x2="173" y2="149" width="0.3" layer="91"/>
-<wire x1="179" y1="149" x2="173" y2="149" width="0.3" layer="91"/>
-<wire x1="122" y1="222" x2="122" y2="230" width="0.3" layer="91"/>
-<wire x1="110" y1="222" x2="110" y2="230" width="0.3" layer="91"/>
-<wire x1="97" y1="222" x2="97" y2="230" width="0.3" layer="91"/>
-<wire x1="122" y1="230" x2="136" y2="230" width="0.3" layer="91"/>
-<wire x1="136" y1="230" x2="173" y2="230" width="0.3" layer="91"/>
-<wire x1="173" y1="230" x2="179" y2="230" width="0.3" layer="91"/>
-<wire x1="61" y1="230" x2="76" y2="230" width="0.3" layer="91"/>
-<wire x1="76" y1="230" x2="97" y2="230" width="0.3" layer="91"/>
-<wire x1="97" y1="230" x2="110" y2="230" width="0.3" layer="91"/>
-<wire x1="110" y1="230" x2="122" y2="230" width="0.3" layer="91"/>
-<wire x1="173" y1="230" x2="173" y2="216" width="0.3" layer="91"/>
-<wire x1="173" y1="216" x2="173" y2="203" width="0.3" layer="91"/>
-<wire x1="173" y1="203" x2="173" y2="190" width="0.3" layer="91"/>
-<wire x1="173" y1="190" x2="173" y2="175" width="0.3" layer="91"/>
-<wire x1="179" y1="216" x2="173" y2="216" width="0.3" layer="91"/>
-<wire x1="179" y1="203" x2="173" y2="203" width="0.3" layer="91"/>
-<wire x1="179" y1="190" x2="173" y2="190" width="0.3" layer="91"/>
-<wire x1="179" y1="175" x2="173" y2="175" width="0.3" layer="91"/>
-<junction x="110" y="230"/>
-<junction x="97" y="230"/>
-<junction x="122" y="230"/>
-<junction x="173" y="230"/>
-<junction x="173" y="216"/>
-<junction x="173" y="203"/>
-<junction x="173" y="190"/>
-<junction x="173" y="175"/>
-<junction x="136" y="230"/>
+<wire x1="168" y1="222" x2="168" y2="230" width="0.3" layer="91"/>
+<wire x1="193" y1="175" x2="193" y2="162" width="0.3" layer="91"/>
+<wire x1="193" y1="162" x2="193" y2="149" width="0.3" layer="91"/>
+<wire x1="199" y1="149" x2="193" y2="149" width="0.3" layer="91"/>
+<wire x1="156" y1="222" x2="156" y2="230" width="0.3" layer="91"/>
+<wire x1="144" y1="222" x2="144" y2="230" width="0.3" layer="91"/>
+<wire x1="132" y1="222" x2="132" y2="230" width="0.3" layer="91"/>
+<wire x1="156" y1="230" x2="168" y2="230" width="0.3" layer="91"/>
+<wire x1="168" y1="230" x2="193" y2="230" width="0.3" layer="91"/>
+<wire x1="193" y1="230" x2="199" y2="230" width="0.3" layer="91"/>
+<wire x1="85" y1="230" x2="96" y2="230" width="0.3" layer="91"/>
+<wire x1="96" y1="230" x2="108" y2="230" width="0.3" layer="91"/>
+<wire x1="108" y1="230" x2="120" y2="230" width="0.3" layer="91"/>
+<wire x1="120" y1="230" x2="132" y2="230" width="0.3" layer="91"/>
+<wire x1="132" y1="230" x2="144" y2="230" width="0.3" layer="91"/>
+<wire x1="144" y1="230" x2="156" y2="230" width="0.3" layer="91"/>
+<wire x1="193" y1="230" x2="193" y2="216" width="0.3" layer="91"/>
+<wire x1="193" y1="216" x2="193" y2="203" width="0.3" layer="91"/>
+<wire x1="193" y1="203" x2="193" y2="190" width="0.3" layer="91"/>
+<wire x1="193" y1="190" x2="193" y2="175" width="0.3" layer="91"/>
+<wire x1="199" y1="216" x2="193" y2="216" width="0.3" layer="91"/>
+<wire x1="199" y1="203" x2="193" y2="203" width="0.3" layer="91"/>
+<wire x1="199" y1="190" x2="193" y2="190" width="0.3" layer="91"/>
+<wire x1="199" y1="175" x2="193" y2="175" width="0.3" layer="91"/>
+<junction x="144" y="230"/>
+<junction x="132" y="230"/>
+<junction x="156" y="230"/>
+<junction x="193" y="230"/>
+<junction x="193" y="216"/>
+<junction x="193" y="203"/>
+<junction x="193" y="190"/>
+<junction x="193" y="175"/>
+<junction x="168" y="230"/>
 <pinref part="X9" gate="G$1" pin="1"/>
-<pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="X5" gate="G$1" pin="1"/>
 <pinref part="X6" gate="G$1" pin="1"/>
 <pinref part="X8" gate="G$1" pin="1"/>
@@ -6352,18 +6370,24 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <pinref part="U1" gate="A1" pin="VO"/>
 <pinref part="X4" gate="G$1" pin="1"/>
 <pinref part="X3" gate="G$1" pin="1"/>
-<wire x1="179" y1="162" x2="173" y2="162" width="0.3" layer="91"/>
-<junction x="173" y="162"/>
-<wire x1="173" y1="149" x2="173" y2="137" width="0.3" layer="91"/>
-<wire x1="179" y1="137" x2="173" y2="137" width="0.3" layer="91"/>
+<wire x1="199" y1="162" x2="193" y2="162" width="0.3" layer="91"/>
+<junction x="193" y="162"/>
+<wire x1="193" y1="149" x2="193" y2="137" width="0.3" layer="91"/>
+<wire x1="199" y1="137" x2="193" y2="137" width="0.3" layer="91"/>
 <pinref part="X2" gate="G$1" pin="1"/>
-<junction x="173" y="149"/>
-<wire x1="76" y1="222" x2="76" y2="230" width="0.3" layer="91"/>
-<junction x="76" y="230"/>
-<pinref part="C6" gate="C" pin="1"/>
-<pinref part="C7" gate="C" pin="1"/>
-<pinref part="C9" gate="C" pin="+"/>
-<pinref part="C10" gate="C" pin="+"/>
+<junction x="193" y="149"/>
+<wire x1="120" y1="222" x2="120" y2="230" width="0.3" layer="91"/>
+<junction x="120" y="230"/>
+<pinref part="C10" gate="C" pin="1"/>
+<pinref part="C11" gate="C" pin="1"/>
+<pinref part="C13" gate="C" pin="+"/>
+<pinref part="C14" gate="C" pin="+"/>
+<wire x1="96" y1="222" x2="96" y2="230" width="0.3" layer="91"/>
+<pinref part="C9" gate="C" pin="1"/>
+<wire x1="108" y1="222" x2="108" y2="230" width="0.3" layer="91"/>
+<pinref part="C8" gate="C" pin="1"/>
+<junction x="96" y="230"/>
+<junction x="108" y="230"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -6397,6 +6421,50 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="-73" y1="217" x2="-73" y2="194" width="0.3" layer="91"/>
 <wire x1="-73" y1="194" x2="-65" y2="194" width="0.3" layer="91"/>
 <pinref part="X1" gate="G$2" pin="1"/>
+</segment>
+</net>
+<net name="VIN+" class="0">
+<segment>
+<wire x1="-8" y1="222" x2="-8" y2="230" width="0.3" layer="91"/>
+<wire x1="-21" y1="222" x2="-21" y2="230" width="0.3" layer="91"/>
+<wire x1="-21" y1="230" x2="-8" y2="230" width="0.3" layer="91"/>
+<wire x1="-8" y1="230" x2="5" y2="230" width="0.3" layer="91"/>
+<wire x1="5" y1="222" x2="5" y2="230" width="0.3" layer="91"/>
+<wire x1="5" y1="230" x2="16" y2="230" width="0.3" layer="91"/>
+<wire x1="16" y1="222" x2="16" y2="230" width="0.3" layer="91"/>
+<wire x1="16" y1="230" x2="28" y2="230" width="0.3" layer="91"/>
+<wire x1="28" y1="230" x2="40" y2="230" width="0.3" layer="91"/>
+<wire x1="40" y1="230" x2="52" y2="230" width="0.3" layer="91"/>
+<wire x1="52" y1="230" x2="65" y2="230" width="0.3" layer="91"/>
+<wire x1="-60" y1="230" x2="-60" y2="242" width="0.3" layer="91"/>
+<wire x1="-60" y1="242" x2="-32" y2="242" width="0.3" layer="91"/>
+<wire x1="-32" y1="242" x2="-32" y2="230" width="0.3" layer="91"/>
+<wire x1="-32" y1="230" x2="-21" y2="230" width="0.3" layer="91"/>
+<junction x="5" y="230"/>
+<junction x="16" y="230"/>
+<junction x="-21" y="230"/>
+<junction x="-8" y="230"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="U1" gate="A1" pin="VI"/>
+<pinref part="D4" gate="1" pin="C"/>
+<wire x1="-66" y1="228" x2="-66" y2="230" width="0.3" layer="91"/>
+<wire x1="-66" y1="230" x2="-60" y2="230" width="0.3" layer="91"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="-60" y1="230" x2="-54" y2="230" width="0.3" layer="91"/>
+<wire x1="-54" y1="230" x2="-54" y2="228" width="0.3" layer="91"/>
+<junction x="-60" y="230"/>
+<pinref part="C5" gate="C" pin="1"/>
+<wire x1="28" y1="222" x2="28" y2="230" width="0.3" layer="91"/>
+<junction x="28" y="230"/>
+<pinref part="C1" gate="C" pin="+"/>
+<pinref part="C2" gate="C" pin="+"/>
+<pinref part="C4" gate="C" pin="1"/>
+<wire x1="40" y1="222" x2="40" y2="230" width="0.3" layer="91"/>
+<pinref part="C7" gate="C" pin="1"/>
+<wire x1="52" y1="222" x2="52" y2="230" width="0.3" layer="91"/>
+<pinref part="C6" gate="C" pin="1"/>
+<junction x="40" y="230"/>
+<junction x="52" y="230"/>
 </segment>
 </net>
 </nets>

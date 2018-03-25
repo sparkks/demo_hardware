@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.25" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -69,6 +69,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="100" name="informacija" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="edge" color="2" fill="15" visible="yes" active="yes"/>
 </layers>
 <board>
@@ -2685,10 +2686,10 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C3" library="CDE_DMM" package="1" value="1 µF" x="81" y="63" smashed="yes">
-<attribute name="NAME" x="79" y="65" size="1.3" layer="25" ratio="10"/>
+<attribute name="NAME" x="91.5" y="63" size="1" layer="25" font="vector" ratio="10" align="center"/>
 </element>
-<element name="C8" library="CDE_DMM" package="1" value="1 µF" x="121" y="63" smashed="yes">
-<attribute name="NAME" x="119" y="65" size="1.3" layer="25" ratio="10"/>
+<element name="C12" library="CDE_DMM" package="1" value="1 µF" x="121" y="63" smashed="yes">
+<attribute name="NAME" x="110.5" y="63" size="1" layer="25" font="vector" ratio="10" align="center"/>
 </element>
 <element name="U$1" library="zaibas" package="KRASTAI3MM" value="" x="61" y="153"/>
 <element name="U$2" library="zaibas" package="KRASTAI3MM" value="" x="141" y="153" rot="R270"/>
@@ -2700,31 +2701,37 @@ design rules under a new name.</description>
 <element name="X7" library="con-amp_a" package="10X02MTA" value="" x="133" y="89" rot="R90"/>
 <element name="X9" library="con-amp_a" package="10X02MTA" value="" x="133" y="73" rot="R90"/>
 <element name="U1" library="linear_a" package="TO220H" value="78XX" x="101" y="92.5" smashed="yes">
-<attribute name="NAME" x="101" y="108" size="1.5" layer="25" ratio="10" align="center"/>
+<attribute name="NAME" x="96.5" y="86" size="1" layer="25" ratio="10" align="center"/>
 </element>
 <element name="U$6" library="zaibas" package="100X80PCB" value="" x="61" y="153"/>
-<element name="F1" library="fuse_a" package="GSH15" value="" x="71" y="99" rot="R270"/>
-<element name="X1" library="CON-AK100_a" package="AK100-2V" value="" x="71" y="119" rot="R90"/>
+<element name="F1" library="fuse_a" package="GSH15" value="" x="71" y="99" smashed="yes" rot="R270">
+<attribute name="NAME" x="75.5" y="99" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+<attribute name="VALUE" x="66" y="103.5" size="1.5" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="X1" library="CON-AK100_a" package="AK100-2V" value="" x="71" y="119" smashed="yes" rot="R90">
+<attribute name="NAME" x="69" y="125" size="1" layer="21" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="76" y="125" size="1.5" layer="21" rot="R90"/>
+</element>
 <element name="X4" library="con-amp_a" package="10X02MTA" value="" x="133" y="113" rot="R90"/>
 <element name="X3" library="con-amp_a" package="10X02MTA" value="" x="133" y="121" rot="R90"/>
 <element name="X2" library="con-amp_a" package="10X02MTA" value="" x="133" y="129" rot="R90"/>
 <element name="D1" library="diode_a" package="DO204-10" value="1N5059" x="74" y="77" smashed="yes" rot="R270">
-<attribute name="NAME" x="76.286" y="79.54" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="74" y="69" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
 </element>
 <element name="D2" library="diode_a" package="DO204-10" value="1N5059" x="68" y="77" smashed="yes" rot="R90">
-<attribute name="NAME" x="65.714" y="74.46" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="68" y="69" size="1" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
 </element>
 <element name="D3" library="diode_a" package="DO204-10" value="1N5059" x="68" y="135" smashed="yes" rot="R90">
-<attribute name="NAME" x="65.714" y="132.46" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="68" y="143.5" size="1" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
 </element>
 <element name="D4" library="diode_a" package="DO204-10" value="1N5059" x="74" y="135" smashed="yes" rot="R270">
-<attribute name="NAME" x="76.286" y="137.54" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="74" y="143.5" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
 </element>
-<element name="C5" library="rcl_a" package="C050-025X075" value="0,1 µF" x="98.5" y="73" smashed="yes" rot="R270">
-<attribute name="VOLTAGE" value="50 V" x="98.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIELECTRIC" value="BX" x="98.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="10 %" x="98.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="98.5" y="68" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+<element name="C5" library="rcl_a" package="C050-025X075" value="1 µF" x="91.5" y="73" smashed="yes" rot="R270">
+<attribute name="VOLTAGE" value="50 V" x="91.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="91.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="91.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="91.5" y="78" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
 </element>
 <element name="C1" library="cap_vishay-pol_a" package="AHT10-30C" value="470 µF" x="83" y="129" smashed="yes" rot="R90">
 <attribute name="VOLTAGE" value="40 V" x="83" y="129" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2734,43 +2741,67 @@ design rules under a new name.</description>
 <attribute name="VOLTAGE" value="40 V" x="95" y="129" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="95" y="109" size="1" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 </element>
-<element name="C4" library="rcl_a" package="C050-025X075" value="0,1 µF" x="95" y="73" smashed="yes" rot="R270">
-<attribute name="VOLTAGE" value="50 V" x="95" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIELECTRIC" value="BX" x="95" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="10 %" x="95" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="95" y="68" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+<element name="C4" library="rcl_a" package="C050-025X075" value="1 µF" x="88" y="73" smashed="yes" rot="R90">
+<attribute name="VOLTAGE" value="50 V" x="88" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="88" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="88" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="88" y="78" size="1" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
 </element>
-<element name="C6" library="rcl_a" package="C050-025X075" value="0,1 µF" x="103.5" y="73" smashed="yes" rot="R270">
-<attribute name="VOLTAGE" value="50 V" x="103.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIELECTRIC" value="BX" x="103.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="10 %" x="103.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="103.5" y="68" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+<element name="C10" library="rcl_a" package="C050-025X075" value="1 µF" x="110.5" y="73" smashed="yes" rot="R270">
+<attribute name="VOLTAGE" value="50 V" x="110.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="110.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="110.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="110.5" y="78.5" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
 </element>
-<element name="C7" library="rcl_a" package="C050-025X075" value="0,1 µF" x="107" y="73" smashed="yes" rot="R270">
-<attribute name="VOLTAGE" value="50 V" x="107" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIELECTRIC" value="BX" x="107" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="10 %" x="107" y="73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="107" y="68" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+<element name="C11" library="rcl_a" package="C050-025X075" value="1 µF" x="114" y="73" smashed="yes" rot="R90">
+<attribute name="VOLTAGE" value="50 V" x="114" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="114" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="114" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="114" y="78.5" size="1" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
 </element>
-<element name="C9" library="cap_vishay-pol_a" package="AHT10-30C" value="470 µF" x="107" y="129" smashed="yes" rot="R90">
+<element name="C13" library="cap_vishay-pol_a" package="AHT10-30C" value="470 µF" x="107" y="129" smashed="yes" rot="R90">
 <attribute name="VOLTAGE" value="40 V" x="107" y="129" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="107" y="109" size="1" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 </element>
-<element name="C10" library="cap_vishay-pol_a" package="AHT10-30C" value="470 µF" x="119" y="129" smashed="yes" rot="R90">
+<element name="C14" library="cap_vishay-pol_a" package="AHT10-30C" value="470 µF" x="119" y="129" smashed="yes" rot="R90">
 <attribute name="VOLTAGE" value="40 V" x="119" y="129" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="119" y="109" size="1" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 </element>
+<element name="C7" library="rcl_a" package="C050-025X075" value="0,1 µF" x="98.5" y="73" smashed="yes" rot="R270">
+<attribute name="VOLTAGE" value="50 V" x="98.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="98.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="98.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="98.5" y="78" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+</element>
+<element name="C6" library="rcl_a" package="C050-025X075" value="0,1 µF" x="95" y="73" smashed="yes" rot="R90">
+<attribute name="VOLTAGE" value="50 V" x="95" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="95" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="95" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="95" y="78" size="1" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
+</element>
+<element name="C9" library="rcl_a" package="C050-025X075" value="0,1 µF" x="107" y="73" smashed="yes" rot="R90">
+<attribute name="VOLTAGE" value="50 V" x="107" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="107" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="107" y="73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="107" y="78" size="1" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
+</element>
+<element name="C8" library="rcl_a" package="C050-025X075" value="0,1 µF" x="103.5" y="73" smashed="yes" rot="R270">
+<attribute name="VOLTAGE" value="50 V" x="103.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIELECTRIC" value="BX" x="103.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="10 %" x="103.5" y="73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="103.5" y="78" size="1" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
+</element>
 </elements>
 <signals>
-<signal name="+5V">
+<signal name="VOUT+">
 <contactref element="X9" pad="1"/>
-<contactref element="C8" pad="1"/>
+<contactref element="C12" pad="1"/>
 <contactref element="X5" pad="1"/>
 <contactref element="X6" pad="1"/>
 <contactref element="X8" pad="1"/>
 <contactref element="X7" pad="1"/>
 <contactref element="U1" pad="3"/>
-<polygon width="1" layer="16" spacing="1.5" isolate="1" thermals="no">
+<polygon width="1" layer="16" spacing="1.5" isolate="0.5" thermals="no">
 <vertex x="102.5" y="149"/>
 <vertex x="102.5" y="57"/>
 <vertex x="128" y="57" curve="90"/>
@@ -2781,23 +2812,28 @@ design rules under a new name.</description>
 <contactref element="X4" pad="1"/>
 <contactref element="X3" pad="1"/>
 <contactref element="X2" pad="1"/>
-<contactref element="C6" pad="1"/>
-<contactref element="C7" pad="1"/>
-<contactref element="C9" pad="+"/>
-<contactref element="C10" pad="+"/>
+<contactref element="C10" pad="1"/>
+<contactref element="C11" pad="1"/>
+<contactref element="C13" pad="+"/>
+<contactref element="C14" pad="+"/>
+<contactref element="C8" pad="1"/>
+<contactref element="C9" pad="1"/>
 </signal>
 <signal name="GND">
 <contactref element="C3" pad="2"/>
-<contactref element="C8" pad="2"/>
+<contactref element="C12" pad="2"/>
 <contactref element="X5" pad="2"/>
 <contactref element="X6" pad="2"/>
 <contactref element="X8" pad="2"/>
 <contactref element="X7" pad="2"/>
 <contactref element="X9" pad="2"/>
 <contactref element="U1" pad="2"/>
-<polygon width="1" layer="1" spacing="1.5" isolate="1" thermals="no">
+<polygon width="1" layer="1" spacing="1.5" isolate="0.5" thermals="no">
+<vertex x="74" y="57"/>
 <vertex x="99.5" y="57"/>
-<vertex x="99.5" y="78.5"/>
+<vertex x="99.5" y="78.5" curve="-90"/>
+<vertex x="100.5" y="79.5"/>
+<vertex x="101.5" y="79.5" curve="-90"/>
 <vertex x="102.5" y="78.5"/>
 <vertex x="102.5" y="57"/>
 <vertex x="128" y="57" curve="90"/>
@@ -2805,13 +2841,14 @@ design rules under a new name.</description>
 <vertex x="137" y="140" curve="90"/>
 <vertex x="128" y="149"/>
 <vertex x="102.5" y="149"/>
-<vertex x="102.5" y="84.5"/>
+<vertex x="102.5" y="84.5" curve="-90"/>
+<vertex x="101.5" y="83.5"/>
+<vertex x="100.5" y="83.5" curve="-90"/>
 <vertex x="99.5" y="84.5"/>
 <vertex x="99.5" y="149"/>
 <vertex x="74" y="149" curve="90"/>
 <vertex x="65" y="140"/>
 <vertex x="65" y="66" curve="90"/>
-<vertex x="74" y="57"/>
 </polygon>
 <contactref element="X4" pad="2"/>
 <contactref element="X3" pad="2"/>
@@ -2822,28 +2859,14 @@ design rules under a new name.</description>
 <contactref element="C1" pad="-"/>
 <contactref element="C2" pad="-"/>
 <contactref element="C4" pad="2"/>
+<contactref element="C10" pad="2"/>
+<contactref element="C11" pad="2"/>
+<contactref element="C13" pad="-"/>
+<contactref element="C14" pad="-"/>
 <contactref element="C6" pad="2"/>
 <contactref element="C7" pad="2"/>
-<contactref element="C9" pad="-"/>
-<contactref element="C10" pad="-"/>
-</signal>
-<signal name="VDD2">
-<contactref element="C3" pad="1"/>
-<contactref element="U1" pad="1"/>
-<polygon width="1" layer="16" spacing="1.5" isolate="1" thermals="no">
-<vertex x="74" y="57"/>
-<vertex x="99.5" y="57"/>
-<vertex x="99.5" y="149"/>
-<vertex x="74" y="149" curve="90"/>
-<vertex x="65" y="140"/>
-<vertex x="65" y="66" curve="90"/>
-</polygon>
-<contactref element="D4" pad="C"/>
-<contactref element="D2" pad="C"/>
-<contactref element="C5" pad="1"/>
-<contactref element="C1" pad="+"/>
-<contactref element="C2" pad="+"/>
-<contactref element="C4" pad="1"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C9" pad="2"/>
 </signal>
 <signal name="N$1">
 <contactref element="X1" pad="P$2"/>
@@ -2865,6 +2888,26 @@ design rules under a new name.</description>
 <contactref element="F1" pad="1"/>
 <contactref element="X1" pad="P$1"/>
 <wire x1="71" y1="110" x2="71" y2="116.5" width="2" layer="16"/>
+</signal>
+<signal name="VIN+">
+<contactref element="D4" pad="C"/>
+<contactref element="C2" pad="+"/>
+<contactref element="C6" pad="1"/>
+<contactref element="C5" pad="1"/>
+<contactref element="C7" pad="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C1" pad="+"/>
+<contactref element="D2" pad="C"/>
+<contactref element="C3" pad="1"/>
+<contactref element="U1" pad="1"/>
+<polygon width="1" layer="16" spacing="1.5" isolate="0.5" thermals="no">
+<vertex x="74" y="57"/>
+<vertex x="99.5" y="57"/>
+<vertex x="99.5" y="149"/>
+<vertex x="74" y="149" curve="90"/>
+<vertex x="65" y="140"/>
+<vertex x="65" y="66" curve="90"/>
+</polygon>
 </signal>
 </signals>
 </board>
